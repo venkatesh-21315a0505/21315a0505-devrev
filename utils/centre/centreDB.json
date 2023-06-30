@@ -1,0 +1,35 @@
+[
+  {
+    "code": "001",
+    "name": "Hyd",
+    "from": "11:11",
+    "to": "21:01",
+    "bookings": {
+      "0001-03-31": [
+        { "name": "Rohan", "id": "111", "sex": "male", "age": "31" }
+      ]
+    }
+  },
+  {
+    "code": "T0012",
+    "name": "Vene",
+    "from": "13:01",
+    "to": "04:23",
+    "bookings": {
+      "0011-11-11": [
+        { "name": "Suresh", "id": "jjb1", "sex": "male", "age": "11" },
+        { "name": "Ramesh", "id": "jjb2", "sex": "male", "age": "12" },
+        { "name": "Meena", "id": "jjb3", "sex": "female", "age": "15" },
+        { "name": "Deepa", "id": "jjb4", "sex": "female", "age": "13" },
+        { "name": "Sanjay", "id": "jjb5", "sex": "male", "age": "14" }
+      ]
+    }
+  },
+  {
+    "code": "Id009",
+    "name": "Ghat",
+    "from": "08:59",
+    "to": "08:08",
+    "bookings": []
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "username": "admin",
+    "password": "admin",
+    "type": "admin",
+    "cookie": "8c23b26c7f4456d2423a99e33abb89dbc0498c03e76d6a79"
+  },
+  {
+    "username": "user",
+    "password": "user",
+    "type": "user",
+    "cookie": "2fc164d8c6d30c58333f5b8d756fafea5c7c266cd688681a"
+  }
+]
