@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../OneDrive/Desktop/stock/21315a0505-devrev"
+		},
+		{
+			"path": "../utils"
+		},
+		{
+			"path": "../views"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../node_modules"
+		}
+	],
+	"settings": {}
+}
