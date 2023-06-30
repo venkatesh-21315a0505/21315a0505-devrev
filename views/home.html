@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Routes</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: antiquewhite;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .route {
+        margin-bottom: 20px;
+      }
+
+      .route-title {
+        font-weight: bold;
+      }
+
+      .note {
+        font-style: italic;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Routes</h1>
+
+    <div class="route">
+      <div class="route-title">Home</div>
+      <div>(root) <a href="/">GET: /</a></div>
+    </div>
+
+    <div class="route">
+      <div class="route-title">User</div>
+      <div>(login) <a href="/u/login">GET: /u/login</a></div>
+      <div>(signup) <a href="/u/signup">GET: /u/signup</a></div>
+      <div>(bookvaccine) <a href="/u/bookvaccine">GET: /u/bookvaccine</a></div>
+      <div>(logout) <a href="/u/logout">GET: /u/logout</a></div>
+    </div>
+
+    <div class="route">
+      <div class="route-title">Admin</div>
+      <div>(signup) <a href="/a/signup">GET: /a/signup</a></div>
+      <div>(login) <a href="/a/login">GET: /a/login</a></div>
+      <div>(addcentre) <a href="/a/addcentre">GET: /a/addcentre</a></div>
+      <div>
+        (viewcentre / delete) <a href="/a/viewcentre">GET: /a/viewcentre</a>
+      </div>
+      <div>(logout) <a href="/a/logout">GET: /a/logout</a></div>
+    </div>
+
+    <div class="route">
+      <div class="route-title">Testing Admin Credentials:</div>
+      <div>Username: admin</div>
+      <div>Password: admin</div>
+    </div>
+
+    <div class="route">
+      <div class="route-title">Testing User Credentials:</div>
+      <div>Username: user</div>
+      <div>Password: user</div>
+    </div>
+
+    <div class="note">
+      Note(1) :
+      <strong
+        >Cookies are used. You need to log out from the user role to access the
+        admin role, and vice versa.</strong
+      ><br />
+      Note(2) :
+      <strong
+        >The data provided here is initialized by default for testing purposes.
+        However, please be aware that any dynamically generated data will be
+        reset and deleted every 15 minutes.</strong
+      >
+    </div>
+  </body>
+</html>

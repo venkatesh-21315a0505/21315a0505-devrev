@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Vaccine Centre</title>
+  </head>
+  <body>
+    <h1>Add Vaccine Centre</h1>
+    <form action="/a/addcentre" method="POST">
+      <div>
+        <label for="code">Centre Code:</label>
+        <input type="text" id="code" name="code" required />
+      </div>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="from">Working Hours (From):</label>
+        <input type="time" id="from" name="from" required />
+      </div>
+      <div>
+        <label for="to">Working Hours (To):</label>
+        <input type="time" id="to" name="to" required />
+      </div>
+      <button type="submit">Add Centre</button>
+    </form>
+  </body>
+</html>

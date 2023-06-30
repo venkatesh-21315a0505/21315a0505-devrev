@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Centres</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .delete-button {
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>View Centres</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Bookings</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let centre of centres) { %>
+        <tr>
+          <td><%= centre.code %></td>
+          <td><%= centre.name %></td>
+          <td><%= centre.from %></td>
+          <td><%= centre.to %></td>
+          <td>
+            <% if (Object.keys(centre.bookings).length > 0) { %>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>ID</th>
+                  <th>Sex</th>
+                  <th>Age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% for (let date in centre.bookings) { %> <% for (let booking of
+                centre.bookings[date]) { %>
+                <tr>
+                  <td><%= date %></td>
+                  <td><%= booking.name %></td>
+                  <td><%= booking.id %></td>
+                  <td><%= booking.sex %></td>
+                  <td><%= booking.age %></td>
+                </tr>
+                <% } %> <% } %>
+              </tbody>
+            </table>
+            <% } else { %> No bookings available <% } %>
+          </td>
+          <td>
+            <form action="/a/delete/<%= centre.code %>" method="POST">
+              <button class="delete-button" type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
